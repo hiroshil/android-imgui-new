@@ -28,7 +28,7 @@ Activity对应的布局view ,然后在对应的布局view上面addview一个显�
 #### 使用说明
 
 #### 演示图
-<img src="https://gitee.com/alexmmc/AndroidImguiNew/raw/master/Screenshot_2023-04-27-21-17-27-04.jpg" width="200" height="600"
+<img src="https://gitee.com/alexmmc/AndroidImguiNew/raw/master/Screenshot_2023-04-27-21-17-27-04.jpg" width="200" height="400"
 alt="演示1随便找的游戏"/><br/>
-<img src="https://gitee.com/alexmmc/AndroidImguiNew/raw/master/Screenshot_2023-04-27-21-22-26-95.jpg" width="200" height="600"
+<img src="https://gitee.com/alexmmc/AndroidImguiNew/raw/master/Screenshot_2023-04-27-21-22-26-95.jpg" width="200" height="400"
 alt="演示2"/><br/>
