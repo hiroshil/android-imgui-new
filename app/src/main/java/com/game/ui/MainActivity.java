@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     ///如果是显示在app的竖屏界面，记得自己给surface设置屏幕宽高，surfaceView自己测算的是屏幕宽高，
     // 触摸测算的是减去了状态栏标题栏的屏幕宽高，这会导致触摸偏移
-    //当然，如果你是逆向嵌入横屏游戏,那就什么都不用管
+    //当然，如果你是逆向嵌入横屏游戏,那就什么都不用管。
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
