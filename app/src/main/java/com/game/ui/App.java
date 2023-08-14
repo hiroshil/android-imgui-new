@@ -38,7 +38,7 @@ public class App extends Application implements Application.ActivityLifecycleCal
         super.onCreate();
         sApp = this;
         //注册Activity监控
-       // this.registerActivityLifecycleCallbacks(this);
+        this.registerActivityLifecycleCallbacks(this);
         //错误处理
         CrashHandler.init(this);
         //so加载 顺便把包路径传过去
@@ -71,7 +71,7 @@ public class App extends Application implements Application.ActivityLifecycleCal
             //Toast.makeText(activity,"开始运行"+activity.getClass().getSimpleName(),Toast.LENGTH_LONG).show();
             if (surfaceView==null) {
                 //surface初始化
-                surfaceView = new mySurfaceView(this);
+                surfaceView = new mySurfaceView(GameContext);
                 surfaceView.setZOrderOnTop(true);//置顶
                 //surfaceView.setZOrderMediaOverlay(true);
                 surfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
