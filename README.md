@@ -16,13 +16,19 @@ Activity对应的布局view ,然后在对应的布局view上面addview一个显�
 这样就能添加成功了.
 
 
-#### 使用教程
+#### 使用教程 
+##  有两种方法  ##
+方法1//////
 0.  如果你要嵌入游戏，需要以下几个步骤
 1.  首先编译和和游戏同架构的so文件
 2.  然后把so塞进游戏对应的lib文件夹里面
 3.  修改清单文件AndroidManifest，把我们Application加上去 如果有的游戏自带Application的话，就让那个Application继承我们自己写的Application
 4.  逆向后把我们编译的应用的classes.dex添加到游戏的解包目录里面,记得改名,比如classes2.dex
 
+方法2//////
+前面0-2部分相同
+3. 反编译后从MainActivity的onCreate里面复制Launcher的启动代码invoke-static {p0}, Lcom/game/ui/Launcher;->Init(Landroid/app/Activity;)V
+4. 然后在游戏的Activity的onCreate里面添加上述代码记得在setContentView方法之后再添加,不然会崩溃,详情可以看视频
 #### 使用说明
 
 #### 演示图
