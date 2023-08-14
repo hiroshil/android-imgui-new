@@ -38,9 +38,9 @@ public class App extends Application implements Application.ActivityLifecycleCal
         super.onCreate();
         sApp = this;
         //注册Activity监控
-        this.registerActivityLifecycleCallbacks(this);
+       // this.registerActivityLifecycleCallbacks(this);
         //错误处理
-        //CrashHandler.init(this);
+        CrashHandler.init(this);
         //so加载 顺便把包路径传过去
         GLES3JNILib.setFilePath(getFilesDir().getAbsolutePath());
     }

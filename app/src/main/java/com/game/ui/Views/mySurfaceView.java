@@ -1,6 +1,7 @@
 package com.game.ui.Views;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -53,7 +54,7 @@ public class mySurfaceView extends SurfaceView implements SurfaceHolder.Callback
         getHolder().addCallback(this);
         bundle=new Bundle();
         inputConnection=new MyInputConnection(surfaceView,true);
-        manager = (InputMethodManager) App.GameContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+        manager = (InputMethodManager) ((Activity)context).getSystemService(Context.INPUT_METHOD_SERVICE);
         Log.e("NDK","View创建完毕");
         init();
         //setFocusable(true);

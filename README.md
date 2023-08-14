@@ -7,7 +7,7 @@
 无
 
 
-####原理
+#### 原理
 安卓启动Activity之前会先启动Application
 所以我们创建一个继承Application的类，并且在清单文件设置全局Application
 在我们继承Application的类里面实现一个Application.ActivityLifecycleCallbacks接口

@@ -5,6 +5,8 @@ import android.graphics.PixelFormat;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+
 import com.game.ui.Utils.utils;
 import com.game.ui.Views.MyLayout;
 import com.game.ui.Views.mySurfaceView;
@@ -18,7 +20,7 @@ public class Launcher {
     private static View gameview;//游戏原本的view
 
 ///另一种启动方法
-    public static void Init(Activity activity) {
+    public static void Init(@NonNull Activity activity) {
         GLES3JNILib.setFilePath(activity.getFilesDir().getAbsolutePath());
         GameContext = activity;
         //Toast.makeText(activity,"开始运行"+activity.getClass().getSimpleName(),Toast.LENGTH_LONG).show();
